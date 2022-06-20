@@ -1,0 +1,38 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 45px;
+    
+    background-color: transparent;
+    &--container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-nav-list{
+        width: 311px;
+        display: flex;
+        justify-content: space-between;
+        &__link{
+            color: white;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+    &__modal-button{
+        width: 30px;
+        height: 26px;
+
+        background-color: transparent;
+    }
+}

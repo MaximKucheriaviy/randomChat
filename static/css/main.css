@@ -1,0 +1,234 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 1920px;
+  padding-left: 119px;
+  padding-right: 119px;
+}
+
+button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+ol, ul, li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 45px;
+  background-color: transparent;
+}
+
+.header--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav-list {
+  width: 311px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-nav-list__link {
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.header__modal-button {
+  width: 30px;
+  height: 26px;
+  background-color: transparent;
+}
+
+.herro {
+  padding-top: 222px;
+  padding-bottom: 105px;
+  position: relative;
+  background-image: url("../images/herro/imgBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 0px;
+  background-size: cover;
+}
+
+.herro__title {
+  width: 688px;
+  color: white;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 95px;
+}
+
+.herro__subtitle {
+  width: 502px;
+  margin-top: 52px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 45px;
+  color: white;
+}
+
+.herro-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+}
+
+.herro__reviou-button {
+  width: 307px;
+  height: 75px;
+  padding: 0px;
+  background-color: #D8A218;
+  border-radius: 38px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 45px;
+}
+
+.herro__video-pay-button {
+  display: block;
+  margin-left: 60px;
+  fill: transparent;
+  stroke: gray;
+}
+
+.herro .video-description {
+  margin-left: 19px;
+  width: 126px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  color: #A3A9B7;
+}
+
+.herro-subscription {
+  margin-top: 112px;
+}
+
+.herro-subscription__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #FBFCFF;
+}
+
+.herro-subscription__icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  gap: 48px;
+}
+
+.herro-subscription__icon {
+  fill: white;
+}
+
+.herro-picture-list {
+  position: absolute;
+  right: 120px;
+  bottom: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.herro-picture-list li {
+  position: relative;
+}
+
+.herro-picture-list .picture-number {
+  position: absolute;
+  top: 19px;
+  left: 23px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 24px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+}
+
+.herro-picture-list .picture-text {
+  position: absolute;
+  left: 23px;
+  bottom: 25px;
+  width: 133px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.herro-picture-list .arrow-icon {
+  position: absolute;
+  right: 18px;
+  bottom: 32px;
+  fill: white;
+}
+/*# sourceMappingURL=main.css.map */

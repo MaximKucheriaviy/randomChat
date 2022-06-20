@@ -1,0 +1,139 @@
+.herro{
+    padding-top: 222px;
+    padding-bottom: 105px;
+    position: relative;
+
+    background-image: url("../images/herro/imgBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+    background-size: cover;
+    &__title{   
+        width: 688px;
+
+        color: white;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 95px;
+    }
+
+    &__subtitle{
+        width: 502px;
+        margin-top: 52px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 45px;
+        color: white;
+    }
+
+    &-buttons{
+        display: flex;
+        margin-top: 70px;
+    }
+
+    &__reviou-button{
+        width: 307px;
+        height: 75px;
+        padding: 0px;
+        
+
+        background-color: #D8A218;
+        border-radius: 38px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    &__video-pay-button{
+        display: block;
+        margin-left: 60px;
+        fill: transparent;
+        stroke: gray;
+    }
+
+    .video-description{
+        margin-left: 19px;
+        width: 126px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 25px;
+        color: #A3A9B7;
+    }
+
+    &-subscription{
+        margin-top: 112px;
+        &__text{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;            
+            letter-spacing: 0.01em;
+            color: #FBFCFF;
+        }
+
+        &__icon-list{
+            display: flex;
+            margin-top: 25px;
+            gap: 48px;
+        }
+
+        &__icon{
+            fill: white;
+        }
+    }
+    &-picture-list{
+        position: absolute;
+        right: 120px;
+        bottom: 67px;
+        display: flex;
+        gap: 30px;
+        li{
+            position: relative;
+        }
+        .picture-number{
+            position: absolute;
+            top: 19px;
+            left: 23px;
+
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 24px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FFFFFF;
+        }
+        .picture-text {
+            position: absolute;
+            left: 23px;
+            bottom: 25px;
+
+            width: 133px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #FFFFFF;
+        }
+        .arrow-icon {
+            position: absolute;
+            right: 18px;
+            bottom: 32px;
+
+            fill: white;
+        }
+    }
+}
