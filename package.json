@@ -1,33 +1,25 @@
 {
-  "name": "server-template",
+  "name": "randomchat",
   "version": "1.0.0",
-  "description": "This is node simle routing server",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaximKucheriaviy/node-server-template.git"
+    "url": "git+https://github.com/MaximKucheriaviy/randomChat.git"
   },
-  "keywords": [
-    "node",
-    "server",
-    "http"
-  ],
-  "author": "Maxim Kucheriaviy",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MaximKucheriaviy/node-server-template/issues"
+    "url": "https://github.com/MaximKucheriaviy/randomChat/issues"
   },
-  "homepage": "https://github.com/MaximKucheriaviy/node-server-template#readme",
+  "homepage": "https://github.com/MaximKucheriaviy/randomChat#readme",
   "dependencies": {
-    "file": "^0.2.2",
-    "http": "0.0.1-security",
+    "http": "^0.0.1-security",
     "mime-types": "^2.1.35",
-    "nodemon": "^2.0.16",
-    "path": "^0.12.7"
+    "ws": "^8.8.0"
   }
 }
