@@ -23,7 +23,7 @@ function createMessage(text){
 
 document.querySelector('.connect-button').onclick = (event) => {
     console.log("Socet open");
-    socet = new WebSocket('ws:/192.168.0.101:9000');
+    socet = new WebSocket('ws:/192.168.3.36:9000');
 
     socet.onopen = (event) => {
         socet.send(JSON.stringify(createConnectLog()));

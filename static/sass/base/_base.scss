@@ -13,10 +13,7 @@ body{
     padding-left: 119px;
     padding-right: 119px;
 }
-button{
-    box-shadow: none;
-    border: none;
-}
+
 
 ol, ul, li{
     list-style: none;
@@ -30,4 +27,11 @@ h1, h2, h3, p{
 
 a{
     text-decoration: none;
+}
+
+.message-container-thumb{
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    overflow-y: scroll;
 }
