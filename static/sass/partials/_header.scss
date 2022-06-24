@@ -1,8 +1,11 @@
 .header{
+    position: absolute;
+
     display: flex;
     justify-content: center;
     align-items: center;
     height: 55px;
+    width: 100%;
 
     background-color: $header-bacoground-color;
     &__title{

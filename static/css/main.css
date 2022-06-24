@@ -44,10 +44,11 @@ img {
 }
 
 main {
-  height: calc(100% - 55px);
+  height: 100%;
 }
 
 .header {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,6 +59,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   height: 55px;
+  width: 100%;
   background-color: #BF9595;
 }
 
