@@ -5,7 +5,9 @@
 body{
     margin: 0px;
     padding: 0px;
-    
+    min-height: 100vh;
+    background-image: url("../images/backgroundd-phone.png");
+    background-size: cover;
 }
 
 .container{

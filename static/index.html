@@ -8,21 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="connect-button">Подключиться</button>
-    <button class="disconnect-button">Отключитться</button>
-    <div class = "chat-block">
-        <div class="message-container-thumb">
-            <div class="message-container">
-    
-            </div>
-        </div>
-        <form action="" name="textInputForm">
-            <label for="">Сообщение</label>
-            <input type="text" name="message">
-            <button class="send-button" type="submit">Сообщение</button>
-        </form>
-    </div>
-
+    <header class="header">
+        <h1 class="header__title">Chat online</h1>
+        <img src="./images/logo.png" alt="Logo">
+    </header>
+    <main>
+        <section class="start-section">
+            <form action="" name="login" class = "login-form">
+                <input type="text" name="username" placeholder="Введите имя" class = "login-form__input"/>
+                <button type="submit">Начать</button>
+            </form>
+        </section>
+    </main>
     <script src = "./js/script.js"></script>
 </body>
 </html>

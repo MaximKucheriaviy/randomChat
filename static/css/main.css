@@ -6,6 +6,9 @@
 body {
   margin: 0px;
   padding: 0px;
+  min-height: 100vh;
+  background-image: url("../images/backgroundd-phone.png");
+  background-size: cover;
 }
 
 .container {
@@ -34,5 +37,52 @@ a {
   height: 300px;
   border: 2px solid black;
   overflow-y: scroll;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 55px;
+  background-color: #BF9595;
+}
+
+.header__title {
+  margin-right: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.login-form {
+  margin-top: 180px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-form__input {
+  width: 208px;
+  height: 39px;
+  border-radius: 15px;
+  background-color: #EDCFCF;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */
