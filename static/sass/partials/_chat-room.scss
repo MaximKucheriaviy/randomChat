@@ -5,7 +5,41 @@
     justify-content: flex-end;
 
     & .message-form{
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+
+        background-color: $meaage-field-color;
+        & .message{
+            width: 258px;
+            height: 39px;
+            border: none;
+            background-color: transparent;
+
+            font-family: 'Inter', sans-serif;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            color: black;
+
+            &::placeholder{
+                font-family: 'Inter', sans-serif;
+                font-style: italic;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 12px;
+                color: #DDA9A9;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
         & .send-message-button{
+            padding: 0;
+            margin-left: 10px;
             border: none;
             display: flex;
             align-items: center;
