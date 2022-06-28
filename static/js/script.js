@@ -50,8 +50,12 @@ document.querySelector('.send-message-button').onclick = (event) => {
     if (socet) {
         const data = new FormData(document.forms.messageForm);
         console.log(data.get("message"));
+        if(data === ""){
+            return;
+        }
         createMessageBlock(userName, data.get("message"), true);
         socet.send(JSON.stringify(createMessage(data.get("message"))));
+        document.forms.messageForm.reset();
     }
 }
 
