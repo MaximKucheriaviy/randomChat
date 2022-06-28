@@ -47,8 +47,24 @@ main {
   height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   position: absolute;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +78,6 @@ main {
   width: 100%;
   background-color: #BF9595;
 }
-
 .header__title {
   margin-right: 14px;
   display: -webkit-box;
@@ -74,7 +89,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 20px;
@@ -97,7 +112,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .login-form__input {
   width: 208px;
   height: 39px;
@@ -113,7 +127,6 @@ main {
   line-height: 12px;
   color: black;
 }
-
 .login-form__input::-webkit-input-placeholder {
   font-family: sans-serif;
   font-style: italic;
@@ -122,7 +135,14 @@ main {
   line-height: 12px;
   color: #DDA9A9;
 }
-
+.login-form__input::-moz-placeholder {
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #DDA9A9;
+}
 .login-form__input:-ms-input-placeholder {
   font-family: sans-serif;
   font-style: italic;
@@ -131,7 +151,6 @@ main {
   line-height: 12px;
   color: #DDA9A9;
 }
-
 .login-form__input::-ms-input-placeholder {
   font-family: sans-serif;
   font-style: italic;
@@ -140,7 +159,6 @@ main {
   line-height: 12px;
   color: #DDA9A9;
 }
-
 .login-form__input::placeholder {
   font-family: sans-serif;
   font-style: italic;
@@ -149,7 +167,6 @@ main {
   line-height: 12px;
   color: #DDA9A9;
 }
-
 .login-form__button {
   margin-top: 29px;
   border: none;
@@ -184,9 +201,16 @@ main {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-
+.chat-room .chatblock-thumb {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .chat-room .message-form {
   position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,60 +220,61 @@ main {
   padding-left: 24px;
   background-color: #D9D9D9;
 }
-
 .chat-room .message-form .message {
   width: 258px;
   height: 39px;
   border: none;
   background-color: transparent;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
   color: black;
 }
-
 .chat-room .message-form .message::-webkit-input-placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
   color: #DDA9A9;
 }
-
+.chat-room .message-form .message::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #DDA9A9;
+}
 .chat-room .message-form .message:-ms-input-placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
   color: #DDA9A9;
 }
-
 .chat-room .message-form .message::-ms-input-placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
   color: #DDA9A9;
 }
-
 .chat-room .message-form .message::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
   color: #DDA9A9;
 }
-
 .chat-room .message-form .message:focus {
   outline: none;
 }
-
 .chat-room .message-form .send-message-button {
   padding: 0;
   margin-left: 10px;
@@ -265,4 +290,38 @@ main {
           justify-content: center;
   background-color: transparent;
 }
-/*# sourceMappingURL=main.css.map */
+.chat-room .message-block-oun {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.chat-room .message-block-other {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.chat-room .message-text-block {
+  overflow: auto;
+  max-width: 70%;
+  border-radius: 15px;
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 10px;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 12px;
+  color: black;
+}
+.chat-room .chatblock {
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */

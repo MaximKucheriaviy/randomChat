@@ -1,4 +1,9 @@
 .chat-room{
+    & .chatblock-thumb{
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -6,11 +11,13 @@
 
     & .message-form{
         position: relative;
-
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        
         display: flex;
         align-items: center;
         padding-left: 24px;
-
         background-color: $meaage-field-color;
         & .message{
             width: 258px;
@@ -46,5 +53,34 @@
             justify-content: center;
             background-color: transparent;
         }
+    }
+    & .message-block-oun{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    & .message-block-other{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    & .message-text-block{
+        overflow: auto;
+        max-width: 70%;
+        border-radius: 15px;
+        background-color: #fff;
+        display: inline-block;
+        padding: 10px 10px;
+
+        font-family: 'Inter', sans-serif;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 12px;
+        color: black;
+    }
+
+    & .chatblock{
+        padding: 10px;
     }
 }
