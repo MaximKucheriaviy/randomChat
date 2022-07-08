@@ -18,7 +18,3 @@ const loadingAnimation = {
         this.div.style.transform = `rotate(${this.rotation}deg)`;
     }
 }
-
-
-document.querySelector('.start').addEventListener('click', event => {loadingAnimation.runAnimation()});
-document.querySelector('.stop').addEventListener('click', event => {loadingAnimation.stopAnimation()});

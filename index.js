@@ -23,7 +23,8 @@ socet.on('connection', (wsClient) => {
         if(message.type === "Message"){
             webClients.forEach(item => {
                 if(item.name !== message.name){
-                    item.socet.send(`${message.name}: ${message.text}`);
+                    const jsonMessage = createMessage(`${message.name}: ${message.text}`, "Message")
+                    item.socet.send(jsonMessage);
                 }
             })
         }
@@ -47,3 +48,15 @@ server(parameter.sourceDirectory).listen(parameter.serverPort, err => {
     }
     console.log(`Sever is runing on port:${parameter.serverPort}.....`);
 })
+
+function createMessage(message, type){
+    const out = {
+        message,
+        type
+    }
+    return JSON.stringify(out);
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}

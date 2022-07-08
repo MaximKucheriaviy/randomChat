@@ -2,7 +2,8 @@ let socet;
 let userName;
 const windows = {
     loginWindow: document.querySelector('.start-section'),
-    chatRoom: document.querySelector('.chat-room')
+    chatRoom: document.querySelector('.chat-room'),
+    loadingScreen: document.querySelector('.loading-screen')
 }
 
 function createConnectLog(){
@@ -29,19 +30,28 @@ document.querySelector('.login-form__button').onclick = (event) => {
         alert("Введите имя пользователя");
         return;
     }
-    console.log("Socet open");
-    socet = new WebSocket('ws:/192.168.1.124:9000');
+    console.log("Socet open", window.location.hostname);
+    socet = new WebSocket(`ws:/${window.location.hostname}:9000`);
     document.querySelector('.login-form').reset();
     socet.onopen = (event) => {
         socet.send(JSON.stringify(createConnectLog()));
         windows.loginWindow.classList.toggle('visually-hidden');
         windows.chatRoom.classList.toggle('visually-hidden');
+        loadingAnimation.runAnimation();
     }
 
     socet.onmessage = (event) => {
-        console.log(event);
-        const arr = event.data.split(": ")
-        createMessageBlock(arr[0], arr[1]);
+        const message = JSON.parse(event.data);
+        switch(message.type){
+            case "Message":
+                const arr = message.message.split(": ")
+                createMessageBlock(arr[0], arr[1]);
+                break;
+            case "Start-chating":
+
+                break;
+        }
+
     }
 }
 
@@ -80,3 +90,6 @@ function createMessageBlock(author, text, oun = false){
     block.append(message);
     document.querySelector('.chatblock').append(block);
 }
+
+
+  
